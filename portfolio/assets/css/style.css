@@ -1872,7 +1872,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .social-list { justify-content: center; }
 
 
-
   /**
 	 * RESUME
 	 */
@@ -1882,32 +1881,49 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+/* Style for the resume button */
 .resume-view-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: #1E1E1F;
+  gap: 10px;
+  background-color: #1E1E1F;
   color: goldenrod;
   border: 2px solid goldenrod;
-  border-radius: 5px;
+  border-radius: 8px;
+  padding: 10px 20px;
   margin: 10px;
-  padding: 10px 15px;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
   text-transform: uppercase;
-  transition: 0.3s;
 }
 
 .resume-view-btn:hover {
-  background: goldenrod;
-  color: #1E1E1F;
+  background-color: goldenrod;
+  color: black;
 }
 
-
+/* Style for the resume link inside the button */
 .resume-view-btn .resume-link {
   text-decoration: none;
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
+}
+
+.resume-view-btn .resume-link:hover {
+  text-decoration: underline;
+}
+
+/* Style for the resume icon inside the button */
+.resume-view-btn .resume-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  filter: invert(85%) sepia(100%) saturate(500%) hue-rotate(45deg) brightness(100%) contrast(90%);
+}
+
+.resume-view-btn:hover .resume-icon {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
