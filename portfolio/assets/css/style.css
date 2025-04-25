@@ -1880,3 +1880,34 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+.resume-view-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1E1E1F;
+  color: goldenrod;
+  border: 2px solid goldenrod;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.resume-view-btn:hover {
+  background: goldenrod;
+  color: #1E1E1F;
+}
+
+
+.resume-view-btn .resume-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
